@@ -1,0 +1,331 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel='stylesheet' href='js/bootstrap/dist/css/bootstrap.min.css'/>
+		<link rel='stylesheet' href='css/micha.css'/>
+		<script type='text/javascript' src='js/jquery/dist/jquery.min.js'></script>
+		<script type='text/javascript' src='js/angular/angular.min.js'></script>
+		<script src='controller.js'></script>
+		<link rel="shortcut icon" href="img/icon/top-M-g.png" type="image/x-icon">
+		<title>Mi-Cha Wei</title>
+	</head>
+	<body ng-app="michaApp">
+		<div id="app" ng-controller="indexCtrl as index">
+			<h1>Mi-Cha Wei</h1>
+
+			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+				<a href="" class="btn btn-default" role="button" ng-click="index.set_page('Home');"><i class="glyphicon glyphicon-home"></i> Home </a>
+				<a href="" class="btn btn-default" role="button" ng-click="index.set_page('Hobby');"><i class="glyphicon glyphicon-send"></i> Hobby </a>
+				<a href="" class="btn btn-default" role="button" ng-click="index.set_page('Work');"><i class="glyphicon glyphicon-picture"></i> Works </a>
+				<a href="" class="btn btn-default" role="button" ng-click="index.set_page('Contact');"><i class="glyphicon glyphicon-envelope"></i> Contact </a>
+			</div>
+
+			<div id="HOME" ng-if="page == 'Home'">
+				<div id="intro">
+					<h3 class="page-header"> Introduction </h3>
+					<table>
+						<tr>
+							<td><img src="img/profile.jpg" height="200"></td>
+							<td>
+								<div id="hello">
+									<p>Hello, my name is Micha,</p>
+									<p>I am from Hsinchu,</p>
+									<p>and now a master student of CMLab,</p>
+									<p>nice to meet you.</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="edu">
+					<h3 class="page-header"> Education </h3>
+					<table>
+						<tr>
+							<td><img src="img/ntu.jpg" height="80"></td>
+							<td>
+								<p>
+								<h4>National Taiwan University, <span class="label label-default">2015 - present</span></h4>
+								<font id="MS">M.S. of <a href="https://www.csie.ntu.edu.tw/" target="_blank">Computer Science and Information Engineering</a>.</font><br>
+								<font class="pull-right">Advisor: Prof. <a href="http://www.csie.ntu.edu.tw/~cyy/">Yung-Yu Chuang</a></font>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="img/ntu.jpg" height="80"></td>
+							<td>
+								<p>
+								<h4>National Taiwan University, <span class="label label-default">2011 - 2015</span></h4>
+								<font id="BS">B.S. of <a href="https://www.csie.ntu.edu.tw/" target="_blank">Computer Science and Information Engineering</a>.</font><br>
+								<font class="pull-right">Advisor: Prof. <a href="http://www.csie.ntu.edu.tw/~cyy/">Yung-Yu Chuang</a></font>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="img/hgsh.jpg" height="80"></td>
+							<td>
+								<p>
+								<h4>National Hsinchu Girls' Senior High School, <span class="label label-default">2008 - 2011</span></h4>
+								<font id="Phy">Project in Physics.</font>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="exp">
+					<h3 class="page-header"> Experience </h3>
+					<table>
+						<tr>
+							<td><img src="img/delta.jpg" width="80"></td>
+							<td>
+								<p>
+								<h4>Delta Electronics, <span class="label label-default">2015 summer</span></h4>
+								<font id="Intern">Software Intern, Project Architect.</font>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="img/ntu.jpg" height="80"></td>
+							<td>
+								<p>
+								<h4>National Taiwan University, <span class="label label-default">2013 - 2015</span></h4>
+								<font id="NA">Network Administrator of Female 2 dormitories.</font>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="exp">
+					<h3 class="page-header"> Activities </h3>
+					<table>
+						<tr>
+							<td><img id="radius" src="img/activities/csiecouncil.jpg" width="80"></td>
+							<td>
+								<p>
+								<h4><a href="https://www.facebook.com/NTU.CSIE.Council">NTU CSIE Student Council</a>, <span class="label label-default">2013 - 2014</span></h4>
+								<font id="act">Treasurer.</font>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img id="radius" src="img/activities/hsinchu.jpg" width="80"></td>
+							<td>
+								<p>
+								<h4><a href="https://www.facebook.com/ntubamboo">NTU Hsinchu Area Alumni Association</a>, <span class="label label-default">2012 - 2013</span></h4>
+								<font id="act">Leader of Art Designing Department.</font>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="img/activities/ntusa.jpg" height="80"></td>
+							<td>
+								<p>
+								<h4><a href="https://www.facebook.com/NTUstudents">NTU Student Association</a>, <span class="label label-default">2012 - 2013</span></h4>
+								<font id="act">Department of Public Relations.</font>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div ng-if="page == 'Hobby'">
+				<div id="hobby" class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="img/orange.jpg" width="280" alt="...">
+							<div class="caption">
+								<h3>Gardening</h3>
+								<p>It's orange.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="img/cat.jpg" width="280" alt="...">
+							<div class="caption">
+								<h3>Playing With Cats</h3>
+								<p>Her name is ThunderBun.</p>
+							</div>
+						</div>
+					</div>	
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="img/hsinchu.jpg" width="280" alt="...">
+							<div class="caption">
+								<h3>Drawing</h3>
+								<p>Some design in college.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="img/bike.jpg" width="280" alt="...">
+							<div class="caption">
+								<h3>Painting</h3>
+								<p>Painting bikes with Silvia.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="img/jogging.jpg" width="280" alt="...">
+							<div class="caption">
+								<h3>Jogging</h3>
+								<p>Jogging for good mood and fitness.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div ng-if="page == 'Work'">
+				<div class="container">
+					<h2 id="projects" class="page-header">Projects</h2>
+					<table id="projectTable">
+						<tr>
+							<td><img id="project-img" width="500" src="img/project/CG.png"></td>
+							<td>
+								<h3>Dressing Color Decision System</h3>
+								<p>NTU Course: &nbsp;<a href="http://graphics.csie.ntu.edu.tw/~ming/courses/icg/" target="_blank">Computer Graphics</a></p>
+								<p>Teacher: &nbsp;<a href="http://www.cmlab.csie.ntu.edu.tw/~ming/" target="_blank">Ming Ouhyoung</a></p>
+								<p>Collaborator: &nbsp;Silvia Chyou</p>
+								<p>Paper Implementation:</p>
+								<p id="paper">1. &nbsp;<a href="http://leyvand.com/harmonization/harmonization.pdf" target="_blank">Color Harmonization</a></p>
+
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div id="project-rtl">
+								<h3>Virtual Dressing Room</h3>
+								<p>NTU Course: &nbsp;<a href="http://graphics.csie.ntu.edu.tw/~ming/courses/rg/index.html" target="_blank">Virtual Reality</a></p>
+								<p>Teacher: &nbsp;<a href="http://www.cmlab.csie.ntu.edu.tw/~ming/" target="_blank">Ming Ouhyoung</a></p>
+								<p>Collaborators: &nbsp;Silvia Chyou, Jeremy Yang</p>
+								<p>Using Kinect, Unity</p>
+								</div>
+							</td>
+							<td><img width="300" src="img/project/VR.png"></td>
+						</tr>
+						<tr>
+							<td><img id="project-img" width="500" src="img/project/VFX.png"></td>
+							<td>
+								<h3>Colorization </h3>
+								<p>NTU Course: &nbsp;<a href="http://www.csie.ntu.edu.tw/~cyy/courses/vfx/14spring/news/" target="_blank">Digital Visual Effects</a></p>
+								<p>Teacher: &nbsp;<a href="http://www.csie.ntu.edu.tw/~cyy/" target="_blank">Yung-Yu Chuang</a></p>
+								<p>Collaborator: &nbsp;Silvia Chyou</p>
+								<p>Paper Implementation: </p>
+								<p id="paper">1. &nbsp;<a href="http://pellacini.di.uniroma1.it/publications/appprop08/appprop08.html" target="_blank">Appprop: All-pairs Appearance-space Edit Propagation</a></p>
+								<p id="paper">2. &nbsp;<a href="http://www.cs.wustl.edu/~taoju/research/kdtree.pdf" target="_blank">Efficient Affinity-based Edit Propagation Using K-D Tree</a></p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="container">
+					<h2 id="drawings" class="page-header">Drawings</h2>
+					<p id="copyright">Copyright &copy; micha<p>
+					<table id="designTable">
+						<tr>
+							<td><img id="img-left" width="200" src="img/drawing/glass.jpg"></td>
+							<td>
+								<h3>Sending Glass To Others</h3>
+								<p>琉璃傳情</p>
+								<p>Advertisement</p>
+								<p>October 2012.<p>
+							</td>
+						</tr>
+					</table>
+					<table id="designTable">
+						<tr>
+							<td>
+								<h3>CSIE and Chinese Camp</h3>
+								<p>資工中文聯合宿營</p>
+								<p>Topic: Holmes</p>
+								<p>T-shirt</p>
+								<p>August 2012.</p>
+							</td>
+							<td><img id="img-right" width="200" src="img/drawing/2012csie.jpg"></td>
+						</tr>
+					</table>
+					<table id="designTable">
+						<tr>
+							<td><img id="L" width="200" src="img/drawing/L.jpg"></td>
+							<td>
+								<h3>NTU Azalea Festival</h3>
+								<p>杜鵑花節</p>
+								<p>L-folder</p>
+								<p>Central Font: AR CHRISTY</p>
+								<p>March 2014.</p>
+							</td>
+						</tr>
+					</table>
+					<table id="designTable">
+						<tr>
+							<td>
+								<h3>NTU Azalea Festival</h3>
+								<p>杜鵑花節</p>
+								<p>Paper Bag</p>
+								<p>Font: BerlinSansFBDemi Bold</p>
+								<p>March 2014.</p>
+							</td>
+							<td><img id="bag" width="200" src="img/drawing/bag.png"></td>
+						</tr>
+					</table>
+					<table id="designTable">
+						<tr>
+							<td>
+								<img id="img-center-left" width="200" src="img/hsinchu.jpg">
+							</td>
+							<td>
+								<h3>NTU Hsinchu Area Alumni Association</h3>
+								<p>新竹地區校友會</p>
+								<p>T-shirt</p>
+								<p>August 2012.</p>
+							</td>
+							<td>
+								<img id="img-center-right" height="200" src="img/drawing/2012bamboo.jpg">
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+
+			<div ng-if="page == 'Contact'">
+				<div class="container">
+					<table id="contactTable">
+						<tr>
+							<td><img id="contactProfile" width="400" src="img/profile-2.jpg"></td>
+							<td>
+								<h2>Mi-Cha Wei</h2>
+								<p>Lab: <a href="http://www.cmlab.csie.ntu.edu.tw/new_cml_website/index.php" target="_blank"> Communications and Multimedia Laboratory [CMLab]</a></p>
+								<p>Office: <a href="https://www.csie.ntu.edu.tw/" target="_blank">NTU CSIE</a> building, Room 506</p>
+								<p>Email: micha [at] cmlab.csie.ntu.edu.tw</p>
+								<div id="contact">
+									<a href="https://www.facebook.com/micha.wei" target="_blank" ng-init="iconFB='img/icon/facebook-g.png'" ng-mouseover="iconFB='img/icon/facebook-b.png'" ng-mouseout="iconFB='img/icon/facebook-g.png'">
+										<img width="30" ng-src="{{ iconFB }}"/>
+									</a>
+
+									<a href="https://instagram.com/micha.wei/" target="_blank" ng-init="iconIG='img/icon/photos-g.png'" ng-mouseover="iconIG='img/icon/photos-b.png'" ng-mouseout="iconIG='img/icon/photos-g.png'">
+										<img width="30" ng-src="{{ iconIG }}"/>
+									</a>
+
+									<a href="https://www.linkedin.com/in/michawei" target="_blank" ng-init="iconLI='img/icon/linkedin-g.png'" ng-mouseover="iconLI='img/icon/linkedin-b.png'" ng-mouseout="iconLI='img/icon/linkedin-g.png'">
+										<img width="30" ng-src="{{ iconLI }}"/>
+									</a>
+
+									<a href="https://github.com/michawei" target="_blank" ng-init="iconGH='img/icon/github-g.png'" ng-mouseover="iconGH='img/icon/github-b.png'" ng-mouseout="iconGH='img/icon/github-g.png'">
+										<img width="30" ng-src="{{ iconGH }}"/>
+									</a>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<p id="micha" >2015, Created by Mi-Cha Wei.
+			<!--br>
+			<font id="time">Last modified: September 2015.</font-->
+		</p>
+	</body>
+</html>

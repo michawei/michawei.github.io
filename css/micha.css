@@ -1,0 +1,174 @@
+a {
+	color: black;
+}
+
+a:hover, a:focus {
+	color: #52bab3;
+}
+
+body {
+	font-family: Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+table {
+	margin-left: 50px;
+}
+
+table tr {
+	height: 100px;
+}
+
+font.pull-right {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+#edu table tr td img, #exp table tr td img {
+	margin-right: 14px;
+}
+
+#contactProfile, #project-img {
+	margin-right: 40px;
+}
+
+#img-left {
+	margin-right: 60px;
+}
+
+#img-right {
+	margin-left: 60px;
+}
+
+#img-center-left {
+	margin-right: 30px;
+}
+
+#img-center-right {
+	margin-left: 30px;
+}
+
+#bag {
+	border-radius: 5px;
+	margin-left: 60px;
+}
+
+#L {
+	border-radius: 5px;
+	margin-right: 60px;
+}
+
+#app {
+	margin: 5%;
+}
+
+#HOME, #HOBBY {
+	border-radius: 5px;
+}
+
+#hobby {
+	margin: 5%;
+}
+
+#hello, #intro, #edu, #exp {
+	margin-left: 20px;
+}
+
+#contact {
+	margin-top: 20px;
+}
+
+#contact a {
+	color: transparent;
+}
+
+#contact img {
+	margin-left: 5px;
+}
+
+#contactTable {
+	margin: 0px auto;
+	margin-top: 5%;
+}
+
+#projectTable, #designTable {
+	margin: 0px auto;
+}
+
+#projectTable tr, #designTable tr {
+	height: 250px;
+}
+
+#project-rtl {
+	direction: rtl; margin-right: 45px;
+}
+
+#micha {
+	margin-left: 5%;
+	font-size: 12px;
+	color: #52bab3;
+	opacity: 0.7;
+}
+
+#copyright {
+	text-align: center;
+	font-size: 12px;
+	color: #52bab3;
+	margin-top: -10px;
+}
+
+#time {
+	font-size: 10px;
+}
+
+#MS, #BS, #Phy, #Intern, #NA, #act {
+	margin-left: 20px;
+}
+
+#paper {
+	padding-left: 20px;
+}
+
+#projects, #drawings {
+	border-bottom: 2px solid #52bab3;
+	text-align: center;
+}
+
+#radius {
+	border-radius: 5px;
+}
+
+.page-header {
+	border-bottom: 2px solid #52bab3;
+}
+
+.thumbnail {
+	height: 400px;
+	width: 300px;
+	margin-top: 0px;
+}
+
+.row .col-sm-6.col-md-4 {
+	width: inherit;
+}
+
+.btn-group.btn-group-justified {
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+.glyphicon.glyphicon-home, .glyphicon.glyphicon-send, .glyphicon.glyphicon-picture, .glyphicon.glyphicon-envelope {
+	margin-right: 10px;
+}
+
+.btn-group.btn-group-justified .btn.btn-default{
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #52bab3;
+	border: 1px solid;
+}
+
+.btn-group.btn-group-justified .btn.btn-default:hover{
+	background-color: #52bab3;
+	opacity: 0.6;
+	border: 1px solid;
+}
