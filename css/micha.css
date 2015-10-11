@@ -23,7 +23,7 @@ font.pull-right {
 	margin-left: 20px;
 }
 
-#edu table tr td img, #exp table tr td img {
+#edu table tr td img, #exp table tr td img, #act table tr td img {
 	margin-right: 14px;
 }
 
@@ -69,9 +69,19 @@ font.pull-right {
 	margin: 5%;
 }
 
-#hello, #intro, #edu, #exp {
+#hello {
 	margin-left: 20px;
 }
+
+#intro, #edu, #exp, #act {
+	margin-left: 20px;
+}
+
+/*#intro-table, #edu-table, #exp-table, #act-table {
+	margin-left: 20px;
+	margin: 0px auto;
+	width: 550px;
+}*/
 
 #contact {
 	margin-top: 20px;
@@ -120,7 +130,7 @@ font.pull-right {
 	font-size: 10px;
 }
 
-#MS, #BS, #Phy, #Intern, #NA, #act {
+#MS, #BS, #Phy, #Intern, #TA, #NA, #ACTIVITY {
 	margin-left: 20px;
 }
 
